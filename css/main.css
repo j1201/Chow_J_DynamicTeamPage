@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+General Style
+--------------------------------------------------------------*/
+
+.hidden {
+  display: none;
+}
+
+.margin-tb {
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
+body {
+	background: #eeeeee;
+}
+
+@font-face {
+    font-family: "brice-black";
+    src: url("../assets/fonts/brice-blacksemiexpanded-webfont.woff2") format("woff2"),
+         url("../assets/fonts/brice-blacksemiexpanded-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "brice-bold";
+    src: url("../assets/fonts/brice-boldsemicondensed-webfont.woff2") format("woff2"),
+         url("../assets/fonts/brice-boldsemicondensed-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+.heading {
+  display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2.5em 0 1em 4em;
+}
+
+ .head-logo {
+	 float: left;
+ }
+
+.logo-img {
+  width: 200px;
+}
+
+.nav {
+	float: right;
+	padding-right: 45px;
+}
+
+.nav ul{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: start;
+}
+
+.nav li{
+  display: inline;
+  margin-right: 2em;
+ }
+
+ .nav li a {
+	 text-decoration: none;
+ }
+
+.nav li a {
+	font-family: "brice-bold";
+	font-size: 22px;
+  color: #1861a9;
+}
+
+.cart-img, .search-img {
+	width: 20px;
+}
+
+/*--------------------------------------------------------------
+About Page
+--------------------------------------------------------------*/
+
+.about-page {
+	margin-top: 3em;
+}
+
+.about-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1.5em;
+}
+
+.about-main h2 {
+	font-family: "brice-black";
+	font-size: 45px;
+	text-transform: uppercase;
+	color: #1861a9;
+	line-height: 70px;
+	text-align: center;
+	justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+	border: 2px solid #1a2175;
+	padding: 1em;
+  text-align: center;
+  display: flex;
+}
+/*
+#about-team {
+  display: flex;
+  justify-content: flex-start;
+} */
+
+#member-title {
+  font-family: "brice-black";
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #1861a9;
+}
+
+.member-info {
+  font-family: "brice-bold";
+  font-size: 18px;
+  color: #1861a9;
+  line-height: 50px;
+  text-align: left;
+}
+
+#imageSec {
+  text-align: center;
+}
+
+#imageContainer {
+	width:300px;
+	height:300px;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+
+#memberImages { position:relative; width:4000px; transition: all .5s; }
+#memberImages img { float:left; }
+
+/* visible {
+  display: block;
+} */
+
+#button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1861a9;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+#button-previous {
+  margin-left: 20px;
+}
+
+#button-next {
+  margin-right: 20px;
+}
