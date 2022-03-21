@@ -106,23 +106,13 @@ About Page
 	color: #1861a9;
 	line-height: 70px;
 	text-align: center;
-	justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-	border: 2px solid #1a2175;
-	padding: 1em;
-  text-align: center;
-  display: flex;
 }
-/*
-#about-team {
-  display: flex;
-  justify-content: flex-start;
-} */
+
 
 #member-title {
   font-family: "brice-black";
 	font-size: 20px;
+  letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #1861a9;
 }
@@ -131,8 +121,9 @@ About Page
   font-family: "brice-bold";
   font-size: 18px;
   color: #1861a9;
-  line-height: 50px;
-  text-align: left;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 1em;
 }
 
 #imageSec {
@@ -146,25 +137,23 @@ About Page
 	overflow: hidden;
 }
 
-
-#memberImages { position:relative; width:4000px; transition: all .5s; }
+#memberImages {
+  position:relative;
+  width:900px;
+  transition: all .5s; }
 #memberImages img { float:left; }
-
-/* visible {
-  display: block;
-} */
 
 #button {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
 button {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: #1861a9;
   background: none;
@@ -176,9 +165,14 @@ button {
 }
 
 #button-previous {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 #button-next {
-  margin-right: 20px;
+  margin-right: 50px;
+}
+
+#member {
+  text-align: center;
+  margin: 2em 0 4em 0;
 }
